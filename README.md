@@ -11,7 +11,7 @@ A simple React Node.js application with authentication (signup and signin) and a
 - Allows users to view available seats and make bookings.
 - Backend API with Node.js for handling booking logic and user management.
 
-##Explanation video: 
+## Explanation video: 
 
 
 
