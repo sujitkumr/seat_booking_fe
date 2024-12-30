@@ -16,7 +16,7 @@ function Booking() {
   });
 
   const getSeats = () => {
-    axios.get(`http://localhost:5000/seats`)
+    axios.get(`https://seat-booking-be0.onrender.com/seats`)
     .then((res) => {
       setLoading(false);
       setSeats(res.data)
@@ -35,7 +35,7 @@ function Booking() {
       return;
     }
 
-    axios.post(`http://localhost:5000/seats/reserve`, { "No_of_Seats" : Number(count) })
+    axios.post(`https://seat-booking-be0.onrender.com/seats/reserve`, { "No_of_Seats" : Number(count) })
     .then((res) => {
       setBooked(res.data);
       toast({
@@ -59,7 +59,7 @@ function Booking() {
 
 
   const handleReset = () => {
-    axios.patch(`http://localhost:5000/seats/reset`)
+    axios.patch(`https://seat-booking-be0.onrender.com/seats/reset`)
     .then((res) => console.log(res))
     .catch((error) => console.log(error));
     toast({
