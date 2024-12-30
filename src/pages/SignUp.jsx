@@ -44,7 +44,7 @@ function SignUp() {
     try {
       // Call the API to create the user account
       const response = await axios.post(
-        'https://seat-booking-be0.onrender.com/user/signup',
+        'https://seat-booking-be0.onrender.com/user/SignUp',
         {
           name: data.username,
           email: data.email,
